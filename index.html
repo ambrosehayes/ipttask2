@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <header>
       <div class="box">
         <h1>Gamer Dude</h1>
@@ -61,11 +63,34 @@
         <h2>Today's Featured Product</h2>
         <!-- maybe use an aside for this image -->
       <div class="featprod">
-        <h3>$34342234</h3>
-        <p>Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? What do they got in there? King Kong? Must go faster... go, go, go, go, go! So you two dig up, dig up dinosaurs? Yes, Yes, without the oops! Eventually, you do plan to have dinosaurs on your dinosaur tour, right?</p>
-        <aside class="featprod"><img src="assets/switch_lite.png" alt="Nintendo Switch Lite" class="featprod"></aside>
+        <h3>Nintendo Switch Lite</h3>
+        <h4>$34342234</h4>
+        <p></p>
+        <p>The system for gamers on the go!
+Nintendo Switch Lite is a compact, lightweight addition to the Nintendo Switch family, with integrated controls. It is designed specifically for handheld play, so you can jump into your favourite games wherever you happen to be.
+<br><br>
+Nintendo Switch Lite supports all Nintendo Switch software that can be played in handheld mode. It’s great for people who have lots of opportunities to play outside, and also for anyone who wants to play online or local wireless multiplayer with friends or family who already own a flagship Nintendo Switch console. As a dedicated handheld gaming device, Nintendo Switch Lite does not support output to a TV.
+<br><br>
+<img src="assets/switchlite.png" alt="Nintendo Switch Lite" class="featprod">
+
+<strong>Features:</strong>
+<ul>
+  <li>It’s easy to take your favourite games with you - With its light, sleek design, this system is ready to hit the road whenever you are.
+  </li>
+  <li>Built-in controllers - Controllers are built right into the system for handheld play, and the left side sports a +Control Pad.
+  </li>
+  <li>Compatible games - The Nintendo Switch Lite system plays the library of Nintendo Switch games that work in handheld mode. Joy-Con controllers (sold separately) can be wirelessly connected to Nintendo Switch Lite to play games compatible with tabletop mode, such as 1-2-Switch and Super Mario Party
+  </li>
+  <li>Local wireless - Link up to eight Nintendo Switch and Nintendo Switch Lite systems together to play multiplayer games anywhere.
+  </li>
+  <li>Online play - Team up or face off with others online in compatible games with a Nintendo Switch Online membership.
+  </li>
+</ul>
+</p>
       </div>
-        <a href="#" class="link-buy">Buy Now</a>
+        <a href="#" class="link-buy" style="
+    margin-right: auto;
+    margin-left: auto;">Buy Now</a>
       </section>
     </article>
 
@@ -74,6 +99,23 @@
         <h2>Swap or Sell</h2>
         <p>Swap or Sell your gaming products, just enter the details below and we'll be in touch!</p>
         <!-- Add form here -->
+        <form class="sellform">
+          <input type="text" name="fname" id="fname" placeholder="First Name" required>
+          <input type="text" name="lname" id="lname" placeholder="Last Name" required><br>
+          <input type="text" name="phnumber" placeholder="Phone Number">
+          <input type="email" name="email" placeholder="Email Address" required>
+          <br><br>
+          <input type="text" name="prodname" Product Name placeholder="Product Name"> <input type="text" name="prodbrand" placeholder="Brand Name"><br>
+          <p>Would you like to:</p>
+          <input type="radio" id="sell" name="fav_language" value="Sell">
+          <label for="sell">Sell</label><br>
+          <input type="radio" id="swap" name="fav_language" value="Swap">
+          <label for="swap">Swap</label><br>
+          <input type="radio" id="discuss" name="fav_language" value="Discus">
+          <label for="discuss">Discuss</label><br>
+          <textarea name="details" rows="8" cols="80" placeholder="Add any details below. Such as condition, anything that makes it special, or price requests."></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </section>
     </article>
 
