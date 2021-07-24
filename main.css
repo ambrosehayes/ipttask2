@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap');
+
+
+/* Set base colours and attributes so is easier for duplicating across pages */
+:root {
+  /* Colours */
+  --colour-black: #000;
+  --colour-grey: #f0f0f0;
+  --colour-white: #fff;
+  --color-yellow: #ffea64;
+  --color-dark-yellow: #fddd50;
+
+  /* Font attributes
+        - Font family
+        - Font sizing
+        - Font weighting
+                              */
+
+  --font-family: 'Rubik', sans-serif;
+  --font-size-h1: 7.5rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 1.875rem;
+  --font-size-h4: 1.375rem;
+  --font-size-text: 1.125rem;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+/* Box sizing rules - include webkit for accessibility */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove default margin for centering */
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+html {
+  /* Stop the page from scrolling sideways */
+  overflow-x: hidden;
+}
+
+/* Now it's time to set the defaults woop */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* Images were being a pain so will just make them a bit easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* font inheriting */
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  color: var(--colour-black);
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--color-yellow);
+  background-image: radial-gradient(var(--color-dark-yellow) 20%, transparent 0), radial-gradient(var(--color-dark-yellow) 20%, transparent 0);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
