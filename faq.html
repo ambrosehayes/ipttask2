@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Swap/Sell</title>
+    <title>FAQs</title>
     <meta name="description" content="IPT Assignment">
     <meta name="author" content="Ambrose Hayes">
     <link rel="stylesheet" href="main.css">
@@ -36,22 +36,31 @@
 
     <article id="sell">
       <section class="box">
-        <h2>Swap or Sell</h2>
-        <p>Swap or Sell your gaming products, just enter the details below and we'll be in touch!</p>
-        <!-- Add form here -->
-        <form class="sellform">
-          <input type="text" name="fname" id="fname" placeholder="First Name" required>
-          <input type="text" name="lname" id="lname" placeholder="Last Name" required><br>
-          <input type="text" name="phnumber" placeholder="Phone Number">
-          <input type="email" name="email" placeholder="Email Address" required>
-          <br><br>
-          <input type="text" name="prodname" Product Name placeholder="Product Name"> <input type="text" name="prodbrand" placeholder="Brand Name"><br>
-          <textarea name="details" rows="8" cols="80" placeholder="Add any details below. Such as condition, anything that makes it special, or price requests. Please also note if you are wanting to sell or swap."></textarea><br>
-          <input type="submit" value="Submit" class="link-allstyles">
-        </form>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="accordiondiv">
+        <!-- Drop Down Accordion -->
+        <button class="accordion">What do they got in there?</button>
+        <div class="panel">
+          <p>Kong? You know what? It is beets. I've crashed into a beet truck. God help us, we're in the hands of engineers. Eventually, you do plan to have dinosaurs on your dinosaur tour, right?</p>
+        </div>
+
+        <button class="accordion">Jaguar shark!</button>
+        <div class="panel">
+          <p>So tell me - does it really exist? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.
+            <br><br>
+            Hey, you know how I'm, like, always trying to save the planet? Here's my chance. What do they got in there? King Kong? You really think you can fly that thing? Remind me to thank John for a lovely weekend.</p>
+        </div>
+
+        <button class="accordion">What are all these weird placeholder texts?</button>
+        <div class="panel">
+          <p>Jeff Goldblum. All Jeff Goldblum (well apart from the cupcakes on the about page but they're also fun).</p>
+        </div>
+      </div>
       </section>
     </article>
   </div>
+
 </main>
   <footer class="page-footer">
     <div class="box">
@@ -79,4 +88,24 @@
   </footer>
   <script src="sticky.js" charset="utf-8"></script>
   </body>
+  <script type="text/javascript">
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+  /* Toggle between adding and removing the "active" class,
+  to highlight the button that controls the panel */
+  this.classList.toggle("active");
+
+  /* Toggle between hiding and showing the active panel */
+  var panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+  }
+});
+}
+  </script>
 </html>

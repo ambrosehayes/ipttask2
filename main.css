@@ -723,3 +723,35 @@ nav ul a:focus,
 .sellform input::placeholder, textarea::placeholder {
   color: var(--colour-white);
 }
+
+.accordion {
+  background-color: var(--colour-blue);
+  color: var(--colour-white);
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+ /* This fun class is to add a darker background when it's clicked on. Activated with javascript. */
+
+ .active, .accordion:hover {
+   background-color: var(--colour-dark-blue)
+ }
+
+ /* Style the accordion panel, which is hidden by default */
+
+ .panel {
+   padding: 0 18px;
+   background-color: var(--colour-white);
+   display: none;
+   overflow: hidden;
+ }
+
+.accordiondiv {
+  padding-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
