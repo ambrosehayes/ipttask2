@@ -718,10 +718,12 @@ nav ul a:focus,
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   /* Edge */
   color: var(--colour-white);
+  opacity: 75%;
 }
 
 input::placeholder, textarea::placeholder {
   color: var(--colour-white);
+  opacity: 75%;
 }
 
 .accordion {
@@ -842,4 +844,16 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
