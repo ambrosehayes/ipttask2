@@ -118,7 +118,7 @@ h4 {
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
 }
 
 strong {
@@ -552,7 +552,9 @@ nav ul a:focus {
   list-style: none;
 }
 
-/* FIXME:  */
+
+
+/* all the cool and vibey buttons */
 
 .link-map span {
   display: block;
@@ -666,4 +668,52 @@ nav ul a:focus,
           box-shadow: 0 0 0 0.1875rem var(--colour-black);
   outline: 2px solid transparent;
   outline-offset: 4px;
+}
+
+.sellform {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.sellform input[type=text], [type=email], textarea{
+  width: 100%;
+  border-radius: 2rem;
+  -webkit-box-shadow: inset 0.1875rem 0.1875rem var(--colour-white), inset -0.1875rem -0.1875rem var(--colour-black);
+  box-shadow: inset 0.1875rem 0.1875rem var(--colour-white), inset -0.1875rem -0.1875rem var(--colour-black);
+
+  font-size: 1.25rem;
+  text-shadow: var(--link-text-shadow);
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: var(--colour-white);
+  background-color: var(--colour-blue);
+
+  padding-left: 2rem;
+}
+.sellform input {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.sellform textarea {
+  resize: none;
+  padding-top: 1rem;
+}
+
+.sellform input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--colour-white);
+}
+
+.sellform input::placeholder, textarea::placeholder {
+  color: var(--colour-white);
 }
